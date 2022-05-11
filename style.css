@@ -1,5 +1,5 @@
 aside {
-  max-width: 40vw;
+  width: 40vw;
   position: fixed;
 }
 
@@ -12,5 +12,37 @@ aside img {
 
 main {
   margin-left: 40vw;
+  min-height: 100vh;
+}
 
+.row {
+  display: flex;
+}
+
+#portfolio img {
+  max-height: 50vh;
+  object-fit: cover;
+  padding: 0px;
+}
+
+.portrait {
+  max-width: 36%;
+}
+
+.landscape {
+  max-width: 64%;
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    margin-left: 0vw;
+    /* background-image: url("aside_full.jpeg");
+    background-size: 100vh;
+    background-position-x: center;
+    backdrop-filter: contrast(0.0); */
+  }
 }
