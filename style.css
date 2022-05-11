@@ -1,0 +1,16 @@
+aside {
+  max-width: 40vw;
+  position: fixed;
+}
+
+aside img {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: grayscale()
+}
+
+main {
+  margin-left: 40vw;
+
+}
